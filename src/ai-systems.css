@@ -36,12 +36,6 @@
 .ai-links .active { color: #00bccc; border-bottom: 2px solid #00bccc; }
 .ai-connect { border: none; background: #00696b; color: #fff; border-radius: 9999px; padding: 8px 18px; font: 700 14px "Space Grotesk", sans-serif; }
 
-.ai-side {
-  position: fixed; left: 24px; top: 120px; z-index: 20; display: flex; flex-direction: column; gap: 26px;
-}
-.ai-side .dot { width: 16px; height: 16px; border-radius: 9999px; background: #bac9c9; }
-.ai-side .dot.active { width: 28px; height: 28px; background: #00ced1; box-shadow: 0 10px 20px rgba(0,206,209,.25); }
-
 .ai-main {
   margin-left: 90px;
   padding: 108px 38px 42px;
@@ -97,7 +91,6 @@
 .ai-footer .accent { color: #00aebc; text-decoration: underline; }
 
 @media (max-width: 1024px) {
-  .ai-side { display: none; }
   .ai-topnav { gap: 10px; }
   .ai-brand { font-size: 22px; }
   .ai-links { display: none; }

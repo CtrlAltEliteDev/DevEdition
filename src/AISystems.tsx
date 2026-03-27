@@ -22,13 +22,6 @@ export default function AISystems({ onBackSystems, onOpenExperience, onOpenProje
         </nav>
       </header>
 
-      <aside className="ai-side">
-        <span className="dot active" />
-        <span className="dot" />
-        <span className="dot" />
-        <span className="dot" />
-      </aside>
-
       <main className="ai-main">
         <div className="ai-header-row">
           <div>

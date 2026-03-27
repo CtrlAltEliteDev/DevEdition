@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Experience from "./Experience";
 import AISystems from "./AISystems";
 import Footer from "./Footer";
+import Sidebar from "./Sidebar";
 
 type PageView = "systems" | "projects" | "experience" | "aiSystems";
 
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <main className="page">
+      <Sidebar />
       {view === "systems" ? (
         <>
           <Hero
