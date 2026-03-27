@@ -7,6 +7,7 @@ import AISystems from "./AISystems";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import FloatingNavbar from "./FloatingNavbar";
+import GlobalBrand from "./GlobalBrand";
 
 type PageView = "systems" | "projects" | "experience" | "aiSystems";
 
@@ -15,6 +16,8 @@ export default function App() {
 
   return (
     <main className="page">
+      <GlobalBrand />
+      <div className="global-brand-spacer" />
       <Sidebar />
       <FloatingNavbar
         activeView={view}

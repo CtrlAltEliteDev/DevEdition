@@ -62,7 +62,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
 }
 
 .ring {
-  position: absolute;
+  position: fixed;
   left: 150px;
   top: 140px;
   width: 680px;
@@ -606,7 +606,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
 
 .deployment-modal h3 {
   color: #1f2627;
-  font: 700 40px "Space Grotesk", sans-serif;
+  font: 700 24px "Space Grotesk", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -686,7 +686,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
   border-radius: 6px;
   background: #1a1f20;
   color: #f8fafa;
-  font: 700 38px "Space Grotesk", sans-serif;
+  font: 700 26px "Space Grotesk", sans-serif;
 }
 
 .deploy-dashed-link {
@@ -699,7 +699,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
   border: 2px solid #00ced1;
   color: #00696b;
   background: #f8fafa;
-  font: 700 40px "Space Grotesk", sans-serif;
+  font: 700 28px "Space Grotesk", sans-serif;
 }
 
 @media (max-width: 720px) {
@@ -735,5 +735,49 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
   .runtime-node,
   .cache-node {
     font-size: 16px;
+  }
+}
+
+.global-brand-left {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 75;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.global-brand-left span {
+  font: 700 36px "Space Grotesk", sans-serif;
+  letter-spacing: -0.03em;
+  color: #191c1d;
+  text-transform: uppercase;
+}
+
+.global-brand-left em {
+  font: 700 14px Manrope, sans-serif;
+  color: #00ced1;
+  font-style: normal;
+}
+
+@media (max-width: 1024px) {
+  .global-brand-left {
+    left: 10px;
+    top: 8px;
+  }
+
+  .global-brand-left span {
+    font-size: 24px;
+  }
+}
+
+.global-brand-spacer {
+  height: 56px;
+}
+
+@media (max-width: 1024px) {
+  .global-brand-spacer {
+    height: 42px;
   }
 }
