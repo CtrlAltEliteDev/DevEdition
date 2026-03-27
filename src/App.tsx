@@ -30,7 +30,6 @@ export default function App() {
         <>
           <Hero />
           <ValueFocus />
-          <Footer />
         </>
       ) : view === "projects" ? (
         <Projects />
@@ -39,6 +38,7 @@ export default function App() {
       ) : (
         <AISystems />
       )}
+      <Footer />
     </main>
   );
 }

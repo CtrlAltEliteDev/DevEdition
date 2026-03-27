@@ -23,24 +23,24 @@
 
 .arsenal-kicker {
   margin: 0 0 14px;
-  color: #00c8cc;
-  font: 700 12px Manrope, sans-serif;
-  letter-spacing: 0.16em;
+  color: var(--teal);
+  font: 700 10px Manrope, sans-serif;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .arsenal-copy h2 {
   margin: 0 0 18px;
-  font: 700 68px/0.92 "Space Grotesk", sans-serif;
-  color: #191c1d;
-  letter-spacing: -0.03em;
+  font: 700 64px/0.95 "Space Grotesk", sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.06em;
 }
 
 .arsenal-body {
   margin: 0;
   max-width: 760px;
-  font: 400 40px/1.5 Inter, sans-serif;
-  color: #3b4949;
+  font: 400 24px/1.33 Inter, sans-serif;
+  color: var(--muted);
 }
 
 .arsenal-body b {
@@ -59,7 +59,7 @@
   align-items: center;
   gap: 8px;
   font: 700 10px Manrope, sans-serif;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.2em;
   color: #415151;
 }
 
@@ -127,7 +127,7 @@
   background: #d7dbdc;
   border-radius: 9999px;
   padding: 8px 16px;
-  font: 700 16px Manrope, sans-serif;
+  font: 700 10px Manrope, sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #48575a;
@@ -135,11 +135,11 @@
 
 @media (max-width: 1200px) {
   .arsenal-copy h2 {
-    font-size: 54px;
+    font-size: 56px;
   }
 
   .arsenal-body {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .skill-card b {
@@ -159,7 +159,7 @@
   }
 
   .arsenal-copy h2 {
-    font-size: 44px;
+    font-size: 56px;
   }
 
   .arsenal-body {

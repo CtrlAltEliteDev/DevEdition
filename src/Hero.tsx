@@ -110,12 +110,6 @@ export default function Hero() {
           </article>
         </div>
 
-        <article className="mini-card">
-          <h4>RB AUTONOMOUS MATRIX</h4>
-          <p><span /> Multi-Agent Swarm Logic</p>
-          <p><span /> High-Concurrency Core</p>
-        </article>
-
         {showBootOverlay ? (
           <div className="terminal-boot-overlay">
             <div className="terminal-boot-head">

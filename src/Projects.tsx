@@ -84,15 +84,6 @@ export default function Projects() {
           </article>
         </div>
 
-        <footer className="proj-footer">
-          <span>© 2024 DIGITAL ARCHITECT / ALL SYSTEMS OPERATIONAL</span>
-          <nav>
-            <a>NEURAL FLOW</a>
-            <a>DOCUMENTATION</a>
-            <a>SECURITY</a>
-            <a>CHANGELOG</a>
-          </nav>
-        </footer>
       </main>
 
       <div className="vline left" />

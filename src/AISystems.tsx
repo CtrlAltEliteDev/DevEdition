@@ -90,14 +90,6 @@ export default function AISystems() {
         </section>
       </main>
 
-      <footer className="ai-footer">
-        <span>© 2024 RIYA BISWAS | FULL STACK AUTONOMY</span>
-        <nav>
-          <a>GITHUB</a>
-          <a>LINKEDIN</a>
-          <a className="accent">TECHNICAL DOCS</a>
-        </nav>
-      </footer>
     </section>
   );
 }

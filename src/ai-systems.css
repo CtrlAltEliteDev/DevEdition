@@ -62,11 +62,6 @@
 .stats-row b { display: block; margin-top: 8px; font: 700 34px "Space Grotesk", sans-serif; }
 .stats-row b.accent { color: #00696b; }
 
-.ai-footer { background: #f2f4f4; border-top: 1px solid rgba(186,201,201,.2); padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
-.ai-footer span, .ai-footer nav a { font: 600 10px Manrope, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: #7f8a98; }
-.ai-footer nav { display: flex; gap: 24px; }
-.ai-footer .accent { color: #00aebc; text-decoration: underline; }
-
 @media (max-width: 1024px) {  .ai-brand { font-size: 22px; }
   .ai-links { display: none; }
   .ai-main { margin-left: 0; padding: 10px 20px 36px; }
@@ -77,5 +72,4 @@
   .ai-grid { grid-template-columns: 1fr; }
   .agent-top { padding: 0; }
   .stats-row { grid-template-columns: 1fr; }
-  .ai-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
 }

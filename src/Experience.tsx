@@ -126,14 +126,6 @@ export default function Experience() {
         </section>
       </main>
 
-      <footer className="exp-footer">
-        <span>© 2024 DIGITAL ARCHITECT. BUILT WITH AUTONOMOUS FLOW.</span>
-        <nav>
-          <a>LINKEDIN</a>
-          <a>GITHUB</a>
-          <a>SOURCE</a>
-        </nav>
-      </footer>
     </section>
   );
 }

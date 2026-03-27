@@ -322,55 +322,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
   font: 700 10px "Courier New", monospace;
 }
 
-.mini-card {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-  width: 340px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 32px;
-  padding: 28px;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  filter: blur(6px);
-  animation: mini-card-reveal 650ms ease-out 1450ms forwards;
-}
 
-.mini-card h4 {
-  margin: 0 0 14px;
-  font: 800 10px Manrope, sans-serif;
-  letter-spacing: 0.25em;
-}
-
-.mini-card p {
-  margin: 0 0 8px;
-  font: 700 11px Manrope, sans-serif;
-  color: var(--muted);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.mini-card p span {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--teal);
-  display: inline-block;
-}
-@keyframes mini-card-reveal {
-  0% {
-    opacity: 0;
-    filter: blur(6px);
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateY(0);
-  }
-}
 
 .floating-nav {
   position: fixed;
@@ -405,7 +357,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
 @media (max-width: 1024px) {
   .pill-nav { display: none; }
   .hero { padding: 90px 20px 60px; min-height: auto; }
-  .hero-right, .mini-card {
+  .hero-right {
     position: static;
     width: 100%;
     margin-top: 24px;
@@ -773,7 +725,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
 }
 
 .global-brand-spacer {
-  height: 56px;
+  height: 110px;
 }
 
 @media (max-width: 1024px) {
