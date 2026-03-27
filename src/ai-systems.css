@@ -73,3 +73,45 @@
   .agent-top { padding: 0; }
   .stats-row { grid-template-columns: 1fr; }
 }
+
+.draggable-graph {
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+.graph-links {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.graph-line {
+  stroke: rgba(0, 105, 107, 0.28);
+  stroke-width: 2;
+  stroke-dasharray: 6 8;
+}
+
+.graph-node {
+  position: absolute;
+  user-select: none;
+  cursor: grab;
+}
+
+.graph-node:active {
+  cursor: grabbing;
+}
+
+.graph-node.core {
+  width: 230px;
+  height: 230px;
+}
+
+@media (max-width: 1024px) {
+  .draggable-graph {
+    min-height: 420px;
+  }
+}

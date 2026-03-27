@@ -1,4 +1,5 @@
 import "./ai-systems.css";
+import AgentGraph from "./AgentGraph";
 
 export default function AISystems() {
   return (
@@ -47,20 +48,7 @@ export default function AISystems() {
               </div>
             </article>
           </div>
-
-          <div className="center-col">
-            <div className="agent-top">
-              <div className="node">ARCHITECT_NODE</div>
-              <div className="node active">CODE_SPECIALIST</div>
-            </div>
-            <div className="core">
-              <div className="core-inner">
-                <h4>GroupChat Manager</h4>
-                <small>DECISION ENGINE ACTIVE</small>
-              </div>
-            </div>
-            <div className="node bottom">QA_VALIDATOR</div>
-          </div>
+          <AgentGraph />
 
           <div className="right-col">
             <article className="card log">
