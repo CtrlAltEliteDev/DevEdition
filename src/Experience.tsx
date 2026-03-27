@@ -30,7 +30,7 @@ export default function Experience() {
           <div className="exp-timeline-col">
             <h2><span /> Journey Log</h2>
             <div className="exp-timeline">
-              <article className="node active">
+              <article className="exp-node active">
                 <span className="date">MAY 2023 — PRESENT</span>
                 <h3>MuSigma</h3>
                 <p className="role">Senior Technical Architect (Autonomous Systems)</p>
@@ -46,7 +46,7 @@ export default function Experience() {
                 </div>
               </article>
 
-              <article className="node muted">
+              <article className="exp-node muted">
                 <span className="date">PRIOR ARCHITECTURE</span>
                 <h3>Systems Engineering</h3>
                 <p className="role">Legacy Systems Specialist</p>
