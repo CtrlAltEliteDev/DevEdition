@@ -1,6 +1,48 @@
+import { useEffect, useRef, useState } from "react";
+
 const arrow = "https://www.figma.com/api/mcp/asset/41d6815c-6262-4d2a-b15c-7cf2d5376934";
 
+const TARGET_SCORE = 98;
+const FRAME_MS = 18;
+
 export default function Hero() {
+  const [score, setScore] = useState(0);
+  const intervalRef = useRef<number | null>(null);
+
+  const stopAnimation = () => {
+    if (intervalRef.current !== null) {
+      window.clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  };
+
+  const handleMetricEnter = () => {
+    stopAnimation();
+    setScore(0);
+
+    let current = 0;
+    intervalRef.current = window.setInterval(() => {
+      current += 1;
+      if (current >= TARGET_SCORE) {
+        setScore(TARGET_SCORE);
+        stopAnimation();
+        return;
+      }
+      setScore(current);
+    }, FRAME_MS);
+  };
+
+  const handleMetricLeave = () => {
+    stopAnimation();
+    setScore(0);
+  };
+
+  useEffect(() => {
+    return () => {
+      stopAnimation();
+    };
+  }, []);
+
   return (
     <>
       <section className="hero">
@@ -31,7 +73,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-right">
-          <article className="terminal">
+          <article className="terminal" onMouseEnter={handleMetricEnter} onMouseLeave={handleMetricLeave}>
             <div className="terminal-head">
               <div className="lights">
                 <span />
@@ -45,10 +87,10 @@ export default function Hero() {
               <div className="metric">
                 <div>
                   <span>Core Integrity Index</span>
-                  <strong>98.2%</strong>
+                  <strong>{score}%</strong>
                 </div>
                 <div className="bar">
-                  <i />
+                  <i style={{ width: `${score}%` }} />
                 </div>
               </div>
               <div className="grid-mini">
