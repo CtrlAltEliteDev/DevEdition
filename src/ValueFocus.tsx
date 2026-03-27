@@ -1,12 +1,12 @@
 import "./value-focus.css";
 
 const skillCards = [
-  { icon: "hub", label: "Multi-Agent", hot: true },
-  { icon: "psychology", label: "RAG Architect", hot: true },
-  { icon: "database", label: "MERN/MEAN", hot: true },
-  { icon: "code", label: "TypeScript", hot: false },
-  { icon: "cloud", label: "AWS CDK", hot: false },
-  { icon: "memory", label: "LLM Ops", hot: false },
+  { label: "Multi-Agent", hot: true },
+  { label: "RAG Architect", hot: true },
+  { label: "MERN/MEAN", hot: true },
+  { label: "TypeScript", hot: false },
+  { label: "AWS CDK", hot: false },
+  { label: "LLM Ops", hot: false },
 ];
 
 const techTags = [
@@ -44,9 +44,11 @@ export default function ValueFocus() {
         </div>
 
         <div className="arsenal-grid">
-          {skillCards.map((card) => (
+          {skillCards.map((card, index) => (
             <article key={card.label} className={card.hot ? "skill-card hot" : "skill-card"}>
-              <small>{card.icon}</small>
+              <small>
+                <img src={`/figure${index + 1}.svg`} alt={`Figure ${index + 1}`} />
+              </small>
               <b>{card.label}</b>
             </article>
           ))}
