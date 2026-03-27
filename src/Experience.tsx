@@ -1,26 +1,8 @@
 import "./experience.css";
 
-type ExperienceProps = {
-  onBackSystems: () => void;
-  onOpenProjects: () => void;
-  onOpenAiSystems: () => void;
-};
-
-export default function Experience({ onBackSystems, onOpenProjects, onOpenAiSystems }: ExperienceProps) {
+export default function Experience() {
   return (
     <section className="exp-page" id="experience">
-      <nav className="exp-nav">
-        <span className="exp-brand">Digital Architect</span>
-        <div className="exp-links">
-          <button onClick={onBackSystems}>HERO</button>
-          <a className="active">EXPERIENCE</a>
-          <button onClick={onOpenAiSystems}>AI SYSTEMS</button>
-          <button onClick={onOpenProjects}>PROJECTS</button>
-          <a>GAME</a>
-        </div>
-        <button className="exp-contact">CONTACT</button>
-      </nav>
-
       <main className="exp-main">
         <div className="exp-dot-grid" />
 

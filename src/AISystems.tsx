@@ -1,27 +1,8 @@
 import "./ai-systems.css";
 
-type AISystemsProps = {
-  onBackSystems: () => void;
-  onOpenExperience: () => void;
-  onOpenProjects: () => void;
-};
-
-export default function AISystems({ onBackSystems, onOpenExperience, onOpenProjects }: AISystemsProps) {
+export default function AISystems() {
   return (
     <section className="ai-page" id="ai-systems">
-      <header className="ai-topnav-wrap">
-        <nav className="ai-topnav">
-          <div className="ai-brand">RIYA.BISWAS</div>
-          <div className="ai-links">
-            <button onClick={onBackSystems}>HERO</button>
-            <button onClick={onOpenExperience}>EXPERIENCE</button>
-            <a className="active">AI SYSTEMS</a>
-            <button onClick={onOpenProjects}>PROJECTS</button>
-          </div>
-          <button className="ai-connect">Connect</button>
-        </nav>
-      </header>
-
       <main className="ai-main">
         <div className="ai-header-row">
           <div>

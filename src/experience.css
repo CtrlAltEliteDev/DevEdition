@@ -4,21 +4,6 @@
   min-height: 100vh;
 }
 
-.exp-nav {
-  position: fixed;
-  top: 16px;
-  right: 16px;
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(16px);
-  border-radius: 9999px;
-  box-shadow: 0 10px 30px rgba(25, 28, 29, 0.04);
-  padding: 10px 24px;
-}
-
 .exp-brand {
   font-family: "Space Grotesk", sans-serif;
   font-size: 40px;
@@ -60,7 +45,7 @@
 
 .exp-main {
   position: relative;
-  padding: 120px 84px 90px;
+  padding: 10px 84px 90px;
 }
 
 .exp-dot-grid {
@@ -380,13 +365,6 @@
 }
 
 @media (max-width: 1024px) {
-  .exp-nav {
-    position: static;
-    border-radius: 0;
-    padding: 14px;
-    gap: 10px;
-    justify-content: space-between;
-  }
 
   .exp-links {
     display: none;

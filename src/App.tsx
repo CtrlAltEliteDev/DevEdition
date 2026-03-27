@@ -25,32 +25,16 @@ export default function App() {
       />
       {view === "systems" ? (
         <>
-          <Hero
-            onOpenProjects={() => setView("projects")}
-            onOpenExperience={() => setView("experience")}
-            onOpenAiSystems={() => setView("aiSystems")}
-          />
+          <Hero />
           <ValueFocus />
           <Footer />
         </>
       ) : view === "projects" ? (
-        <Projects
-          onBackSystems={() => setView("systems")}
-          onOpenExperience={() => setView("experience")}
-          onOpenAiSystems={() => setView("aiSystems")}
-        />
+        <Projects />
       ) : view === "experience" ? (
-        <Experience
-          onBackSystems={() => setView("systems")}
-          onOpenProjects={() => setView("projects")}
-          onOpenAiSystems={() => setView("aiSystems")}
-        />
+        <Experience />
       ) : (
-        <AISystems
-          onBackSystems={() => setView("systems")}
-          onOpenExperience={() => setView("experience")}
-          onOpenProjects={() => setView("projects")}
-        />
+        <AISystems />
       )}
     </main>
   );

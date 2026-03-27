@@ -1,26 +1,8 @@
 import "./projects.css";
 
-type ProjectsProps = {
-  onBackSystems: () => void;
-  onOpenExperience: () => void;
-  onOpenAiSystems: () => void;
-};
-
-export default function Projects({ onBackSystems, onOpenExperience, onOpenAiSystems }: ProjectsProps) {
+export default function Projects() {
   return (
     <section className="proj-page" id="projects">
-      <nav className="proj-nav">
-        <div className="proj-brand">ARCHITECT.AI</div>
-        <div className="proj-links">
-          <button onClick={onBackSystems}>HERO</button>
-          <button onClick={onOpenExperience}>EXPERIENCE</button>
-          <button onClick={onOpenAiSystems}>AI SYSTEMS</button>
-          <a className="active">PROJECTS</a>
-          <a>GAME</a>
-        </div>
-        <button className="proj-menu">|||</button>
-      </nav>
-
       <main className="proj-main">
         <header className="proj-header">
           <div className="proj-kicker">

@@ -1,28 +1,8 @@
 const arrow = "https://www.figma.com/api/mcp/asset/41d6815c-6262-4d2a-b15c-7cf2d5376934";
 
-type HeroProps = {
-  onOpenProjects: () => void;
-  onOpenExperience: () => void;
-  onOpenAiSystems: () => void;
-};
-
-export default function Hero({ onOpenProjects, onOpenExperience, onOpenAiSystems }: HeroProps) {
+export default function Hero() {
   return (
     <>
-      <header className="topbar">
-        <div className="brand">
-          <span>RIYA BISWAS</span>
-          <em>[V2.4]</em>
-        </div>
-        <nav className="pill-nav">
-          <a className="active">SYSTEMS</a>
-          <button className="tab-link" onClick={onOpenExperience}>EXPERIENCE</button>
-          <button className="tab-link" onClick={onOpenAiSystems}>AI SYSTEMS</button>
-          <button className="tab-link" onClick={onOpenProjects}>PROJECTS</button>
-          <button>CONNECT</button>
-        </nav>
-      </header>
-
       <section className="hero">
         <div className="ring" />
         <div className="hero-left">

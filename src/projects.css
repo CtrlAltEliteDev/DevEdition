@@ -5,20 +5,6 @@
   position: relative;
 }
 
-.proj-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 50;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  background: rgba(249, 249, 248, 0.8);
-  backdrop-filter: blur(18px);
-}
-
 .proj-brand {
   font-family: "Space Grotesk", sans-serif;
   font-size: 36px;
@@ -60,7 +46,7 @@
 }
 
 .proj-main {
-  padding: 128px 72px 96px;
+  padding: 10px 72px 96px;
   background-image: radial-gradient(#00ced1 0.5px, transparent 0.5px);
   background-size: 24px 24px;
 }
@@ -367,9 +353,7 @@
 .vline.left { left: 48px; }
 .vline.right { right: 48px; }
 
-@media (max-width: 1024px) {
-  .proj-links { display: none; }
-  .proj-main { padding: 100px 20px 64px; }
+@media (max-width: 1024px) {  .proj-main { padding: 10px 20px 64px; }
   .proj-header h1 { font-size: 64px; }
   .proj-header p { font-size: 22px; }
   .proj-grid { grid-template-columns: 1fr; }
