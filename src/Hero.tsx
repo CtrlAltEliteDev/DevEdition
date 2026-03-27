@@ -54,7 +54,6 @@ export default function Hero() {
             <span className="dot" />
             SYSTEMS ARCHITECT // FULL-STACK EXPERT
           </div>
-          <h2>RIYA BISWAS</h2>
           <h1>
             Building High
             <br />
