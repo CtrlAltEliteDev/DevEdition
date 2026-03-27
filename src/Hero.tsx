@@ -7,6 +7,8 @@ const FRAME_MS = 18;
 
 export default function Hero() {
   const [score, setScore] = useState(0);
+  const [showDeploymentModal, setShowDeploymentModal] = useState(false);
+  const [showBootOverlay, setShowBootOverlay] = useState(false);
   const intervalRef = useRef<number | null>(null);
 
   const stopAnimation = () => {
@@ -65,10 +67,12 @@ export default function Hero() {
             high-concurrency digital foundations.
           </p>
           <div className="cta-row">
-            <button className="cta-primary">
+            <button className="cta-primary" onClick={() => setShowBootOverlay(true)}>
               Initialize Session <img src={arrow} alt="" />
             </button>
-            <button className="cta-ghost">View Stack Details</button>
+            <button className="cta-ghost" onClick={() => setShowDeploymentModal(true)}>
+              View Deployment Stack
+            </button>
           </div>
         </div>
 
@@ -112,6 +116,64 @@ export default function Hero() {
           <p><span /> Multi-Agent Swarm Logic</p>
           <p><span /> High-Concurrency Core</p>
         </article>
+
+        {showBootOverlay ? (
+          <div className="terminal-boot-overlay">
+            <div className="terminal-boot-head">
+              <span>SYSTEM_BOOT_SEQUENCE_V2.4</span>
+              <button onClick={() => setShowBootOverlay(false)}>[ABORT]</button>
+            </div>
+            <div className="terminal-boot-lines">
+              <p>&gt; INITIALIZING KERNEL...</p>
+              <p>&gt; LOADING NEURAL MODULES... [DONE]</p>
+              <p>&gt; ESTABLISHING SECURE TUNNEL... [OK]</p>
+              <p>&gt; SYNCING MERN_STACK_V4.2... 82%</p>
+              <p className="pulse">&gt; AUTHENTICATING ARCHITECT ACCESS...</p>
+            </div>
+          </div>
+        ) : null}
+
+        {showDeploymentModal ? (
+          <div className="deployment-modal-overlay" onClick={() => setShowDeploymentModal(false)}>
+            <div className="deployment-modal" onClick={(e) => e.stopPropagation()}>
+              <header>
+                <h3>TECHNICAL DEPLOYMENT MAP</h3>
+                <button className="close-x" onClick={() => setShowDeploymentModal(false)}>×</button>
+              </header>
+
+              <div className="deploy-top-row">
+                <div className="deploy-node-col">
+                  <div className="deploy-node">DB</div>
+                  <small>MONGODB</small>
+                </div>
+                <span className="deploy-arrow">→</span>
+                <div className="deploy-node-col">
+                  <div className="deploy-node">API</div>
+                  <small>EXPRESS</small>
+                </div>
+                <span className="deploy-arrow">→</span>
+                <div className="deploy-node-col">
+                  <div className="deploy-node">UI</div>
+                  <small>REACT/ANGULAR</small>
+                </div>
+              </div>
+
+              <div className="deploy-vertical-link" />
+
+              <div className="deploy-bottom-row">
+                <div className="runtime-col">
+                  <div className="runtime-node">Node.js Runtime</div>
+                  <small>EXECUTION ENVIRONMENT</small>
+                </div>
+                <div className="deploy-dashed-link" />
+                <div className="cache-col">
+                  <div className="cache-node">Redis</div>
+                  <small>CACHE</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </section>
     </>
   );
