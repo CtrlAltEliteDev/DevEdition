@@ -241,12 +241,12 @@
   opacity: 0.65;
 }
 
-.arsenal-grid {
-  display: flex;
+.arsenal-grid1 {
+  display: grid;
   gap: 18px;
 }
 
-.arsenal-grid h4 {
+.arsenal-grid1 h4 {
   margin: 0 0 8px;
   font-family: Manrope, sans-serif;
   font-size: 11px;
@@ -365,9 +365,50 @@
 
   .exp-content-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 
-  .arsenal-grid {
+  .exp-timeline-col h2,
+  .exp-arsenal-col h2 {
+    margin-bottom: 14px;
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  .exp-timeline {
+    padding-left: 16px;
+  }
+
+  .node {
+    margin-bottom: 24px;
+  }
+
+  .node::before {
+    left: -23px;
+  }
+
+  .node .date {
+    font-size: 11px;
+  }
+
+  .node h3 {
+    margin: 6px 0 6px;
+    font-size: 38px;
+    line-height: 1.04;
+  }
+
+  .role {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .exp-note-card {
+    border-radius: 18px;
+    padding: 14px;
+  }
+
+  .arsenal-grid1 {
     grid-template-columns: 1fr;
   }
 
@@ -376,7 +417,19 @@
   }
 
   .exp-stats {
+    margin-top: 22px;
     grid-template-columns: 1fr;
   }
 
+}
+
+@media (max-width: 720px) {
+  .exp-timeline-col h2,
+  .exp-arsenal-col h2 {
+    font-size: 30px;
+  }
+
+  .node h3 {
+    font-size: 30px;
+  }
 }

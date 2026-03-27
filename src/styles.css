@@ -63,7 +63,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, 
 
 .ring {
   position: fixed;
-  left: 150px;
+  left:21vw;
   top: 140px;
   width: 680px;
   height: 680px;

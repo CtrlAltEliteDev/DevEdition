@@ -56,7 +56,7 @@ export default function Experience() {
 
           <div className="exp-arsenal-col">
             <h2><span /> Technical Arsenal</h2>
-            <div className="arsenal-grid">
+            <div className="arsenal-grid1">
               <div>
                 <h4>LANGUAGES</h4>
                 <div className="pill-wrap">

@@ -15,30 +15,32 @@ export default function App() {
   const [view, setView] = useState<PageView>("systems");
 
   return (
-    <main className="page">
-      <GlobalBrand />
-      <div className="global-brand-spacer" />
-      <Sidebar />
-      <FloatingNavbar
-        activeView={view}
-        onOpenSystems={() => setView("systems")}
-        onOpenProjects={() => setView("projects")}
-        onOpenExperience={() => setView("experience")}
-        onOpenAiSystems={() => setView("aiSystems")}
-      />
-      {view === "systems" ? (
-        <>
-          <Hero />
-          <ValueFocus />
-        </>
-      ) : view === "projects" ? (
-        <Projects />
-      ) : view === "experience" ? (
-        <Experience />
-      ) : (
-        <AISystems />
-      )}
+    <>
+      <main className="page">
+        <GlobalBrand />
+        <div className="global-brand-spacer" />
+        <Sidebar />
+        <FloatingNavbar
+          activeView={view}
+          onOpenSystems={() => setView("systems")}
+          onOpenProjects={() => setView("projects")}
+          onOpenExperience={() => setView("experience")}
+          onOpenAiSystems={() => setView("aiSystems")}
+        />
+        {view === "systems" ? (
+          <>
+            <Hero />
+            <ValueFocus />
+          </>
+        ) : view === "projects" ? (
+          <Projects />
+        ) : view === "experience" ? (
+          <Experience />
+        ) : (
+          <AISystems />
+        )}
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
