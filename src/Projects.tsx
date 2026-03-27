@@ -113,14 +113,6 @@ export default function Projects({ onBackSystems, onOpenExperience, onOpenAiSyst
         </footer>
       </main>
 
-      <div className="floating-nav-proj">
-        <button>GAME</button>
-        <button className="active">PROJECTS</button>
-        <button onClick={onOpenAiSystems}>AI SYSTEMS</button>
-        <button onClick={onOpenExperience}>EXPERIENCE</button>
-        <button onClick={onBackSystems}>HERO</button>
-      </div>
-
       <div className="vline left" />
       <div className="vline right" />
     </section>

@@ -1,0 +1,33 @@
+.floating-navbar {
+  position: fixed;
+  right: 22px;
+  bottom: 46px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+  z-index: 55;
+}
+
+.floating-navbar button {
+  border: none;
+  background: #fff;
+  color: #1a1c1c;
+  padding: 14px 18px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  box-shadow: 0 20px 40px rgba(26, 28, 28, 0.04);
+  cursor: pointer;
+}
+
+.floating-navbar .active {
+  background: #006a62;
+  color: #fff;
+  transform: rotate(3deg) scale(0.95);
+}
+
+@media (max-width: 1024px) {
+  .floating-navbar {
+    display: none;
+  }
+}

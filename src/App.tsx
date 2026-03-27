@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import AISystems from "./AISystems";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import FloatingNavbar from "./FloatingNavbar";
 
 type PageView = "systems" | "projects" | "experience" | "aiSystems";
 
@@ -15,6 +16,13 @@ export default function App() {
   return (
     <main className="page">
       <Sidebar />
+      <FloatingNavbar
+        activeView={view}
+        onOpenSystems={() => setView("systems")}
+        onOpenProjects={() => setView("projects")}
+        onOpenExperience={() => setView("experience")}
+        onOpenAiSystems={() => setView("aiSystems")}
+      />
       {view === "systems" ? (
         <>
           <Hero

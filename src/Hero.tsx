@@ -1,7 +1,3 @@
-const icon1 = "https://www.figma.com/api/mcp/asset/50235a1a-f725-4096-8b53-d0ee256dcaf4";
-const icon2 = "https://www.figma.com/api/mcp/asset/460158f8-9896-4eb7-952f-991c6da045ad";
-const icon3 = "https://www.figma.com/api/mcp/asset/75eced5e-5256-4e29-a40b-50ce3e53f167";
-const menuMain = "https://www.figma.com/api/mcp/asset/3ebdbd78-041a-487a-b73e-f8b3e6bf77ff";
 const arrow = "https://www.figma.com/api/mcp/asset/41d6815c-6262-4d2a-b15c-7cf2d5376934";
 
 type HeroProps = {
@@ -94,13 +90,6 @@ export default function Hero({ onOpenProjects, onOpenExperience, onOpenAiSystems
           <p><span /> Multi-Agent Swarm Logic</p>
           <p><span /> High-Concurrency Core</p>
         </article>
-
-        <div className="floating-nav">
-          <button><img src={icon1} alt="" /></button>
-          <button><img src={icon2} alt="" /></button>
-          <button><img src={icon3} alt="" /></button>
-          <button className="main"><img src={menuMain} alt="" /></button>
-        </div>
       </section>
     </>
   );
