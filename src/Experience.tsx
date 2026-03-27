@@ -32,7 +32,7 @@ export default function Experience() {
             <div className="exp-timeline">
               <article className="exp-node active">
                 <span className="date">MAY 2023 — PRESENT</span>
-                <h3>MuSigma</h3>
+                <h4>MuSigma</h4>
                 <p className="role">Senior Technical Architect (Autonomous Systems)</p>
                 <div className="exp-note-card">
                   <p>
@@ -48,7 +48,7 @@ export default function Experience() {
 
               <article className="exp-node muted">
                 <span className="date">PRIOR ARCHITECTURE</span>
-                <h3>Systems Engineering</h3>
+                <h4>Systems Engineering</h4>
                 <p className="role">Legacy Systems Specialist</p>
               </article>
             </div>
